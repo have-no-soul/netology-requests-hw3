@@ -24,8 +24,8 @@ def get_two_last_days_questions_with_tag(tag):
 		'site': site
 	}
 
-	url = requests.get(url=API_URL, params=params)
-	pprint(url.json())
+	url = requests.get(url=API_URL, params=params).json()
+	pprint(url)
 
 
 if __name__ == '__main__':
